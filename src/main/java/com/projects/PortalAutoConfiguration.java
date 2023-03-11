@@ -15,9 +15,4 @@ public class PortalAutoConfiguration {
     public Portal portal(PortalConfig config) {
         return new Portal(config);
     }
-
-    @Bean
-    public Portal portal() {
-        return new Portal();
-    }
 }

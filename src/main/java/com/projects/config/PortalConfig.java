@@ -17,7 +17,7 @@ public class PortalConfig {
     private String timeout;
 
     @NotNull
-    private String httpversion;
+    private String http_version;
 
     @NotNull
     private String priority;
