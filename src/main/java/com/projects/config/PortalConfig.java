@@ -15,4 +15,13 @@ public class PortalConfig {
 
     @NotNull
     private String timeout;
+
+    @NotNull
+    private String httpversion;
+
+    @NotNull
+    private String priority;
+
+    @NotNull
+    private String redirect;
 }

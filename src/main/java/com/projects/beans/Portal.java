@@ -18,7 +18,9 @@ public class Portal {
     public Portal(PortalConfig config) {
         this.httpClient = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(Long.parseLong(config.getTimeout())))
-                .version(HttpClient.Version.HTTP_2)
+                .version(HttpClient.Version.valueOf(config.getHttpversion()))
+                .priority(Integer.parseInt(config.getPriority()))
+                .followRedirects(HttpClient.Redirect.valueOf(config.getRedirect()))
                 .build();
     }
 
